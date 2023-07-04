@@ -2,9 +2,9 @@ package com.example.shoppinglist.domain
 
 import com.example.shoppinglist.domain.entities.ShopItem
 
-class AddShopItemUseCase(private val shopItemRepository: ShopItemRepository) {
+class AddShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
     fun addShopItem(shopItem: ShopItem) {
-        shopItemRepository.addShopItem(shopItem)
+        shopListRepository.addShopItem(shopItem)
     }
 }

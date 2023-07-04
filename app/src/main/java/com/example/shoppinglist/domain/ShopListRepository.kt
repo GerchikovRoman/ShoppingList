@@ -2,7 +2,7 @@ package com.example.shoppinglist.domain
 
 import com.example.shoppinglist.domain.entities.ShopItem
 
-interface ShopItemRepository {
+interface ShopListRepository {
 
     fun addShopItem(shopItem: ShopItem)
 
