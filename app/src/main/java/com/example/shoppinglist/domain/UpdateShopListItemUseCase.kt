@@ -1,8 +1,10 @@
 package com.example.shoppinglist.domain
 
-class UpdateShopListItemUseCase {
+import com.example.shoppinglist.domain.entities.ShopItem
+
+class UpdateShopListItemUseCase(private val shopItemRepository: ShopItemRepository) {
 
     fun updateShopListItem(shopListItem: List<ShopItem>) {
-
+        shopItemRepository.updateShopListItem(shopListItem)
     }
 }
